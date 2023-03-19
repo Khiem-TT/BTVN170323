@@ -7,17 +7,8 @@
 <body>
 <script>
     function Ex01(arr) {
-        for (let i = 0; i < arr.length; i++) {
-            if (arr[i] === false
-                || arr[i] === null
-                || arr[i] === 0
-                || arr[i] === ''
-                || arr[i] === undefined
-                || arr[i] === NaN) {
-                arr.splice(i, 1);
-            }
-        }
-        console.log(arr);
+        let newArr = arr.filter(Boolean);
+        document.write(`[${newArr}] là mảng đã được loại bỏ các giá trị falsey`);
     }
 </script>
 </body>
