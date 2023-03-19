@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex04</title>
+</head>
+<body>
+<script>
+    function Ex04(arr) {
+        for (let i = 0; i < arr.length; i++) {
+            let flag = true;
+            let count = 0;
+            for (let j = 0; j < arr.length; j++) {
+                if (arr[i] === arr[j]) {
+                    count++;
+                }
+                if (count > 1) {
+                    flag = false;
+                }
+            }
+            if (flag) {
+                document.write(`Phần tử ${arr[i]} là phần tử duy nhất nằm trong mảng ở vị trí số ${i}`);
+            }
+        }
+    }
+</script>
+</body>
+</html>
